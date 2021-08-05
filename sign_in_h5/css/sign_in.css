@@ -1,0 +1,171 @@
+
+
+a,input,label{-webkit-tap-highlight-color:rgba(255,0,0,0);} 
+.qrcode_box{
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 111px;
+  background-color: #f5f5f5;
+}
+.title{
+  font-size: 18px;
+  font-weight: 500;
+  color: #5f6368;
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+
+.people,.people_wrapper{
+  color: #9A9A9A;
+}
+
+
+
+
+
+
+
+
+
+
+.qrcode_input_box{
+  position: relative;
+}
+#code-input{
+  position: absolute;
+  left: -100vw;
+  z-index: -1;
+}
+.code_wrapper{
+  display: flex;
+  align-items: center;
+}
+.code {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  background: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #5f6368;
+}
+.code:focus{
+  outline:-webkit-focus-ring-color auto 1px
+}
+.line{
+  width: 15px;
+  height: 1px;
+  background: #d8d8d8;
+  margin: 0 7px;
+}
+label:focus {
+  outline: none;
+  background-color:transparent
+}
+
+
+
+
+
+
+.remind{
+  display: none;
+  text-align: center;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+.remind img{
+  width: 54px;
+  height: 54px;
+  margin-bottom: 20px;
+}
+.remind p{
+  font-size: 18px;
+  font-weight: 400;
+  color: #333333;
+}
+
+
+
+
+
+
+
+
+
+.code_error{
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+}
+.code_error img{
+  width: 32px;
+  height: 32px;
+  margin-right: 6px;
+}
+.code_error p{
+  font-size: 16px;
+  color: #5f6368;
+}
+
+
+
+
+.model_wrapper{
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 2;
+  /* background-color: #000; */
+}
+.model_success{
+  transform:scale(0);
+  transition: 0.1s;
+  width: 250px;
+  height: 260px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #fff;
+  border-radius: 5px;
+  text-align: center;
+
+  box-sizing: border-box;
+  padding-top: 20px;
+  z-index: 99;
+}
+.model_success img{
+  width: 70px;
+  height: 70px;
+  margin: 20px 0 30px 0 ;
+}
+.model_success h5{
+  font-size: 18px;
+  color: #333;
+}
+.model_success button{
+  margin-top: 50px;
+  width: 200px;
+  height: 30px;
+  border-radius: 15px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #31ab3b;
+  border: none;
+}
